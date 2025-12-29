@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Desgin for Beginers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the Free AI-Learning Platform</h1>
+        <p> Conducted by Nilantha Warnakulasuriya</p>
+
+    </header>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#table">New Course</a>
+        <a href="#ragistation">Registration</a>
+    </div>
+
+    <h2 id="gallery">Image Gallery</h2>
+    <div class="images">
+        <img src="image/img1.jfif" alt="Image 1">
+        <img src="image/img2.jfif" alt="Image 2">
+        <img src="image/img3.jfif" alt="Image 3">
+        <img src="image/img4.jfif" alt="Image 4">
+        <img src="image/img5.jfif" alt="Image 5">
+    </div>
+
+    <h2 id="services">Our Services</h2>
+    <!-- Unordered List -->
+    <ul>
+        <li>Learning and Coching </li>
+        <li>Placment Proess support</li>
+        <li>Life time LMS potal access</li>
+        <li>Learning community</li>
+    </ul>
+
+
+    <h2 id="table">New course start date & information</h2>
+    <!-- Table -->
+    <table>
+        <tr>
+            <th>Course Code</th>
+            <th>Start Date</th>
+            <th>Course Name</th>
+        </tr>
+        <tr>
+            <td>TTD1234</td>
+            <td>2026-jan 26</td>
+            <td>Certificate of Web Design</td>
+        </tr>
+        <tr>
+            <td>TTD1252</td>
+            <td>2026-feb-03</td>
+            <td> Data scince High Diploma </td>
+        </tr>
+        <tr>
+            <td>TTD1291</td>
+            <td>2026-jan 18</td>
+            <td>Diploma in Data Visualisation </td>
+        </tr>
+    </table>
+
+    <div class="register">
+        <h2 id="registration">Register here for up comming cources</h2>
+    </div>
+    <div class="animation">
+
+        <div class="animate-cycle" id="loader"></div>
+    </div>
+
+    </div>
+    <div class="form-wrapper">
+        <div class="form">
+            <h2>Registration Form</h2>
+            <div class="input">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Contact Number" required>
+                <button onclick="submitForm()">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer1">
+            <p>© Designed by Nilantha Warnakulasuriya for a beginner Web Designing course at the University of Moratuwa,
+                Sri Lanka. </p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function submitForm() {
+            const loader = document.getElementById("loader");
+
+            // start loader
+            loader.style.animation = "spin 1s linear infinite";
+
+            // OPTIONAL: simulate form processing
+            setTimeout(() => {
+                loader.style.animation = "none";
+                alert("Your registration successfully done!");
+            }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
